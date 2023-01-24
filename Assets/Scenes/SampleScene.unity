@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 200832443}
   - component: {fileID: 200832444}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Stone3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,7 +191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 239744397}
   - component: {fileID: 239744398}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -209,17 +209,9 @@ Transform:
   m_LocalPosition: {x: -0.05, y: -1.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1143300719}
-  - {fileID: 2038129104}
-  - {fileID: 2100457686}
-  - {fileID: 961660922}
-  - {fileID: 1524430834}
-  - {fileID: 831957872}
-  - {fileID: 484122514}
-  - {fileID: 1422325015}
+  m_Children: []
   m_Father: {fileID: 721964197}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &239744398
 BoxCollider2D:
@@ -257,7 +249,7 @@ GameObject:
   m_Component:
   - component: {fileID: 248275997}
   - component: {fileID: 248275998}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pipe4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -315,7 +307,7 @@ GameObject:
   m_Component:
   - component: {fileID: 484122514}
   - component: {fileID: 484122515}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -330,12 +322,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 484122513}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 85.58, y: 4.7799997, z: 0}
+  m_LocalPosition: {x: 85.53, y: 3.7699997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 239744397}
-  m_RootOrder: 6
+  m_Father: {fileID: 721964197}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &484122515
 BoxCollider2D:
@@ -373,7 +365,7 @@ GameObject:
   m_Component:
   - component: {fileID: 509552849}
   - component: {fileID: 509552850}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pipe3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -515,7 +507,7 @@ GameObject:
   m_Component:
   - component: {fileID: 570013338}
   - component: {fileID: 570013339}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wall2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -574,7 +566,7 @@ GameObject:
   - component: {fileID: 571687231}
   - component: {fileID: 571687233}
   - component: {fileID: 571687232}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: JumpThru2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -648,7 +640,7 @@ GameObject:
   - component: {fileID: 622000394}
   - component: {fileID: 622000396}
   - component: {fileID: 622000395}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cloud2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -720,7 +712,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 721964197}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platforms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -735,12 +727,20 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 721964196}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.12, y: 0, z: 0}
+  m_LocalPosition: {x: 12.7, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 844866061}
   - {fileID: 239744397}
+  - {fileID: 1143300719}
+  - {fileID: 2038129104}
+  - {fileID: 2100457686}
+  - {fileID: 961660922}
+  - {fileID: 1524430834}
+  - {fileID: 831957872}
+  - {fileID: 484122514}
+  - {fileID: 1422325015}
+  - {fileID: 844866061}
   - {fileID: 834356056}
   - {fileID: 2136292403}
   - {fileID: 1635135442}
@@ -759,7 +759,7 @@ GameObject:
   m_Component:
   - component: {fileID: 831957872}
   - component: {fileID: 831957873}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -774,12 +774,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 831957871}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 83.14, y: 2.4099998, z: 0}
+  m_LocalPosition: {x: 83.09, y: 1.3999999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 239744397}
-  m_RootOrder: 5
+  m_Father: {fileID: 721964197}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &831957873
 BoxCollider2D:
@@ -817,7 +817,7 @@ GameObject:
   m_Component:
   - component: {fileID: 834356056}
   - component: {fileID: 834356057}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Stone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -840,7 +840,7 @@ Transform:
   - {fileID: 200832443}
   - {fileID: 861591647}
   m_Father: {fileID: 721964197}
-  m_RootOrder: 2
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &834356057
 BoxCollider2D:
@@ -878,7 +878,7 @@ GameObject:
   m_Component:
   - component: {fileID: 844866061}
   - component: {fileID: 844866062}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DeathZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -898,7 +898,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 721964197}
-  m_RootOrder: 0
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &844866062
 BoxCollider2D:
@@ -936,7 +936,7 @@ GameObject:
   m_Component:
   - component: {fileID: 861591647}
   - component: {fileID: 861591648}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Stone4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -995,7 +995,7 @@ GameObject:
   - component: {fileID: 936791122}
   - component: {fileID: 936791124}
   - component: {fileID: 936791123}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cloud3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1068,7 +1068,7 @@ GameObject:
   m_Component:
   - component: {fileID: 961660922}
   - component: {fileID: 961660923}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1083,12 +1083,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961660921}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 91.240005, y: -0.03999996, z: 0}
+  m_LocalPosition: {x: 91.19, y: -1.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 239744397}
-  m_RootOrder: 3
+  m_Father: {fileID: 721964197}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &961660923
 BoxCollider2D:
@@ -1126,7 +1126,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1026136066}
   - component: {fileID: 1026136067}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pipe1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1151,7 +1151,7 @@ Transform:
   - {fileID: 2095490887}
   - {fileID: 1236563892}
   m_Father: {fileID: 721964197}
-  m_RootOrder: 6
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1026136067
 BoxCollider2D:
@@ -1190,7 +1190,7 @@ GameObject:
   - component: {fileID: 1133283457}
   - component: {fileID: 1133283459}
   - component: {fileID: 1133283458}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: JumpThru8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1263,7 +1263,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1143300719}
   - component: {fileID: 1143300720}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1278,12 +1278,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1143300718}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 30.349998, y: 3.2, z: 0}
+  m_LocalPosition: {x: 30.3, y: 2.19, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 239744397}
-  m_RootOrder: 0
+  m_Father: {fileID: 721964197}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1143300720
 BoxCollider2D:
@@ -1322,7 +1322,7 @@ GameObject:
   - component: {fileID: 1186848869}
   - component: {fileID: 1186848871}
   - component: {fileID: 1186848870}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: JumpThru7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1395,7 +1395,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1236563892}
   - component: {fileID: 1236563893}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pipe6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1454,7 +1454,7 @@ GameObject:
   - component: {fileID: 1353250621}
   - component: {fileID: 1353250623}
   - component: {fileID: 1353250622}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cloud4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1528,7 +1528,7 @@ GameObject:
   - component: {fileID: 1402059881}
   - component: {fileID: 1402059883}
   - component: {fileID: 1402059882}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: JumpThru4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1602,7 +1602,7 @@ GameObject:
   - component: {fileID: 1418368059}
   - component: {fileID: 1418368061}
   - component: {fileID: 1418368060}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cloud1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1625,7 +1625,7 @@ Transform:
   - {fileID: 936791122}
   - {fileID: 1353250621}
   m_Father: {fileID: 721964197}
-  m_RootOrder: 5
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!251 &1418368060
 PlatformEffector2D:
@@ -1678,7 +1678,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1422325015}
   - component: {fileID: 1422325016}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1693,12 +1693,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1422325014}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 109.55, y: 3.22, z: 0}
+  m_LocalPosition: {x: 109.5, y: 2.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 239744397}
-  m_RootOrder: 7
+  m_Father: {fileID: 721964197}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1422325016
 BoxCollider2D:
@@ -1736,7 +1736,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1524430834}
   - component: {fileID: 1524430835}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1751,12 +1751,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1524430833}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 115.97, y: -0.00999999, z: 0}
+  m_LocalPosition: {x: 115.92, y: -1.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 239744397}
-  m_RootOrder: 4
+  m_Father: {fileID: 721964197}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1524430835
 BoxCollider2D:
@@ -1795,7 +1795,7 @@ GameObject:
   - component: {fileID: 1635135442}
   - component: {fileID: 1635135444}
   - component: {fileID: 1635135443}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: JumpThru1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1822,7 +1822,7 @@ Transform:
   - {fileID: 1186848869}
   - {fileID: 1133283457}
   m_Father: {fileID: 721964197}
-  m_RootOrder: 4
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!251 &1635135443
 PlatformEffector2D:
@@ -1875,7 +1875,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1733908259}
   - component: {fileID: 1733908260}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Stone2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1923,6 +1923,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6354523, y: 0.81628275}
   m_EdgeRadius: 0
+--- !u!1 &1753835600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1753835601}
+  m_Layer: 0
+  m_Name: GroundCheck
+  m_TagString: GroundCheck
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1753835601
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753835600}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2051586341}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1927569253
 GameObject:
   m_ObjectHideFlags: 0
@@ -2000,7 +2031,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1927569253}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 104.28, y: 5.8, z: 0}
+  m_LocalPosition: {x: 117.1, y: 5.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2018,7 +2049,7 @@ GameObject:
   - component: {fileID: 1951761164}
   - component: {fileID: 1951761166}
   - component: {fileID: 1951761165}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: JumpThru6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2091,7 +2122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1958534472}
   - component: {fileID: 1958534473}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pipe2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2150,7 +2181,7 @@ GameObject:
   - component: {fileID: 1962861312}
   - component: {fileID: 1962861314}
   - component: {fileID: 1962861313}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: JumpThru5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2223,7 +2254,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2038129104}
   - component: {fileID: 2038129105}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2238,12 +2269,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2038129103}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 50.39, y: -0.03999996, z: 0}
+  m_LocalPosition: {x: 50.34, y: -1.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 239744397}
-  m_RootOrder: 1
+  m_Father: {fileID: 721964197}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2038129105
 BoxCollider2D:
@@ -2283,6 +2314,8 @@ GameObject:
   - component: {fileID: 2051586340}
   - component: {fileID: 2051586339}
   - component: {fileID: 2051586342}
+  - component: {fileID: 2051586343}
+  - component: {fileID: 2051586344}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2349,8 +2382,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -609783941
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -1811893052, guid: f0cf1303d8298a44c9bdf2c0617c5cc5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2371,10 +2404,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2051586338}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.8, y: 2.3, z: 0}
+  m_LocalPosition: {x: -1.1, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1753835601}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2404,6 +2438,46 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6, y: 1.12}
   m_EdgeRadius: 0
+--- !u!95 &2051586343
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051586338}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 83a61a4e26820de4dae6af5fc98d24a3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &2051586344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051586338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c968cf19115dc334f84685557fe01fd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  jumpForce: 0
+  isGrounded: 0
+  groundCheck: {fileID: 1753835601}
+  isGroundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  groundCheckRadius: 0
 --- !u!1 &2055653566
 GameObject:
   m_ObjectHideFlags: 0
@@ -2415,7 +2489,7 @@ GameObject:
   - component: {fileID: 2055653567}
   - component: {fileID: 2055653569}
   - component: {fileID: 2055653568}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: JumpThru3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2488,7 +2562,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2095490887}
   - component: {fileID: 2095490888}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pipe5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2546,7 +2620,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2100457686}
   - component: {fileID: 2100457687}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2561,12 +2635,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2100457685}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 59.95, y: -0.03999996, z: 0}
+  m_LocalPosition: {x: 59.899998, y: -1.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 239744397}
-  m_RootOrder: 2
+  m_Father: {fileID: 721964197}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2100457687
 BoxCollider2D:
@@ -2604,7 +2678,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2136292403}
   - component: {fileID: 2136292404}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wall1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2625,7 +2699,7 @@ Transform:
   m_Children:
   - {fileID: 570013338}
   m_Father: {fileID: 721964197}
-  m_RootOrder: 3
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2136292404
 BoxCollider2D:
