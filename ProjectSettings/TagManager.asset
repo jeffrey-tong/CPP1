@@ -5,8 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - GroundCheck
-  - Powerup
   - Collectible
+  - Ground
+  - Wall
+  - Pickup
+  - Powerup
   layers:
   - Default
   - TransparentFX

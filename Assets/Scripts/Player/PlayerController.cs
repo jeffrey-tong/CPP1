@@ -19,6 +19,42 @@ public class PlayerController : MonoBehaviour
     public LayerMask isGroundLayer;
     public float groundCheckRadius;
 
+    Coroutine jumpForceChange;
+    Coroutine bigChange;
+
+    public int maxLives = 5;
+    private int _lives = 3;
+    public int lives
+    {
+        get { return _lives; }
+        set
+        {
+            //if(_lives > value)
+            //lost a life need to respawn
+
+            _lives = value;
+            if(_lives > maxLives)
+            {
+                _lives = maxLives;
+            }
+
+            //if(_lives < 0)
+            //gameover
+            Debug.Log("Lives have been set to: " + lives.ToString());
+        }
+    }
+
+    private int _score;
+    public int score
+    {
+        get { return _score; }
+        set
+        {
+            _score = value;
+            Debug.Log("Score: " + score.ToString());
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -99,5 +135,55 @@ public class PlayerController : MonoBehaviour
     public void IncreaseGravity()
     {
         rb.gravityScale = 5;
+    }
+
+    public void StartJumpForceChange()
+    {
+        if(jumpForceChange == null)
+        {
+            jumpForceChange = StartCoroutine(JumpForceChange());
+        }
+        else
+        {
+            StopCoroutine(jumpForceChange);
+            jumpForceChange = null;
+            jumpForce /= 2;
+            jumpForceChange = StartCoroutine(JumpForceChange());
+        }
+    }
+
+    IEnumerator JumpForceChange()
+    {
+        jumpForce *= 2;
+
+        yield return new WaitForSeconds(5.0f);
+
+        jumpForce /= 2;
+        jumpForceChange = null;
+    }
+
+    public void StartBigChange()
+    {
+        if(bigChange == null)
+        {
+            bigChange = StartCoroutine(BigChange());
+        }
+        else
+        {
+            StopCoroutine(bigChange);
+            bigChange = null;
+            this.transform.localScale /= 2;
+            bigChange = StartCoroutine(BigChange());
+        }
+    }
+
+    IEnumerator BigChange()
+    {
+        this.transform.localScale *= 2;
+
+        yield return new WaitForSeconds(5.0f);
+
+        this.transform.localScale /= 2;
+        bigChange = null;
     }
 }
