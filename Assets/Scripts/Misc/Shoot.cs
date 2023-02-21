@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-[RequireComponent(typeof(PlayerController))]
 public class Shoot : MonoBehaviour
 {
-
     SpriteRenderer sr;
 
+    public UnityEvent OnProjectileSpawned;
     public float projectileSpeed;
     public Transform spawnPointRight;
     public Transform spawnPointLeft;
@@ -40,5 +40,7 @@ public class Shoot : MonoBehaviour
             Projectile curProjectile = Instantiate(projectilePrefab, spawnPointLeft.position, spawnPointLeft.rotation);
             curProjectile.speed = -projectileSpeed;
         }
+
+        OnProjectileSpawned?.Invoke();
     }
 }

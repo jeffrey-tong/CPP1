@@ -186,4 +186,18 @@ public class PlayerController : MonoBehaviour
         this.transform.localScale /= 2;
         bigChange = null;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Squish"))
+        {
+            EnemyWalker enemy = collision.gameObject.transform.parent.GetComponent<EnemyWalker>();
+            enemy.Squish();
+            rb.AddForce(Vector2.up * 500);
+        }
+    }
+    public virtual void TakeDamage(int damage)
+    {
+        lives -= damage;
+    }
 }

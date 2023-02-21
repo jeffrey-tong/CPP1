@@ -21,14 +21,20 @@ public class Projectile : MonoBehaviour
         Destroy(gameObject, lifetime);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Player" || collision.gameObject.tag == "Powerup" || collision.gameObject.tag == "Collectible")
+        if(collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Wall"))
         {
-            Debug.Log("Projectile hit player or powerup or collectible");
+            Destroy(gameObject);
         }
-        else
+        if (collision.gameObject.CompareTag("Enemy") && gameObject.CompareTag("PlayerProjectile"))
         {
+            collision.gameObject.GetComponent<Enemy>().TakeDamage(1);
+            Destroy(gameObject);
+        }
+        if(collision.gameObject.CompareTag("Player") && gameObject.CompareTag("EnemyProjectile"))
+        {
+            collision.gameObject.GetComponent<PlayerController>().TakeDamage(1);
             Destroy(gameObject);
         }
         
