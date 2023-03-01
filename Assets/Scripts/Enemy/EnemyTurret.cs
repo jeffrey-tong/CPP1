@@ -9,7 +9,6 @@ public class EnemyTurret : Enemy
     public int turretRange;
     float timeSinceLastFire;
     Shoot shootScript;
-    public Transform playerObject;
     // Start is called before the first frame update
     public override void Start()
     {
@@ -37,19 +36,20 @@ public class EnemyTurret : Enemy
     // Update is called once per frame
     void Update()
     {
+        if (!GameManager.instance.playerInstance) return;
         AnimatorClipInfo[] curClips = anim.GetCurrentAnimatorClipInfo(0);
         if (curClips[0].clip.name != "Shoot")
         {
             if(Time.time >= timeSinceLastFire + projectileFireRate)
             {
-                if (Mathf.Abs(playerObject.transform.position.x - this.transform.position.x) < turretRange)
+                if (Mathf.Abs(GameManager.instance.playerInstance.transform.position.x - this.transform.position.x) < turretRange)
                 {
                     anim.SetTrigger("shoot");
                 }
                 
             }
         }
-        this.sr.flipX = playerObject.transform.position.x < this.transform.position.x;
+        this.sr.flipX = GameManager.instance.playerInstance.transform.position.x < this.transform.position.x;
     }
 
     public override void Death()
