@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 [DefaultExecutionOrder(-1)]
 public class GameManager : MonoBehaviour
 {
+    public UnityEvent<int> OnLifeValueChanged;
     private static GameManager _instance = null;
     public static GameManager instance
     {
@@ -24,7 +26,6 @@ public class GameManager : MonoBehaviour
                 Respawn();
             }
            
-
             _lives = value;
             if (_lives > maxLives)
             { 
@@ -35,6 +36,8 @@ public class GameManager : MonoBehaviour
             {
                 SceneManager.LoadScene(2);
             }
+
+            OnLifeValueChanged?.Invoke(_lives);
             
             Debug.Log("Lives have been set to: " + lives.ToString());
         }
