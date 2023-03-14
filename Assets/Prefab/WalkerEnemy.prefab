@@ -227,6 +227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 0
+  deathSound: {fileID: 8300000, guid: 477973123bd32b74c8f41e86a64da5e7, type: 3}
   speed: 0
 --- !u!1 &7752937732177828028
 GameObject:

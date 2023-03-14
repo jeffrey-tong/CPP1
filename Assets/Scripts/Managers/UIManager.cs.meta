@@ -3,7 +3,20 @@ guid: 74fb047642873cc479c5e7bb0eeb9725
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - audioMixer: {fileID: 24100000, guid: f55e22bcc67c5b54e8bd53c1fb05920b, type: 2}
+  - pauseSound: {fileID: 8300000, guid: a55ac5d826bfc14469596041962e0cdf, type: 3}
+  - startButton: {instanceID: 0}
+  - settingsButton: {instanceID: 0}
+  - quitButton: {instanceID: 0}
+  - returnToMenuButton: {instanceID: 0}
+  - returnToGameButton: {instanceID: 0}
+  - mainMenu: {instanceID: 0}
+  - settingsMenu: {instanceID: 0}
+  - pauseMenu: {instanceID: 0}
+  - volSliderText: {instanceID: 0}
+  - livesText: {instanceID: 0}
+  - volSlider: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

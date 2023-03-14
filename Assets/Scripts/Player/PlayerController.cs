@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(Animator), typeof(SpriteRenderer))]
@@ -10,39 +9,23 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     Animator anim;
     SpriteRenderer sr;
+    AudioSourceManager asm;
 
     public float speed;
     public float jumpForce;
-
+    //groundcheck
     public bool isGrounded;
     public Transform groundCheck;
     public LayerMask isGroundLayer;
     public float groundCheckRadius;
 
+    //soundclips
+    public AudioClip jumpSound;
+    public AudioClip squishSound;
+    
+
     Coroutine jumpForceChange;
     Coroutine bigChange;
-
-    public int maxLives = 5;
-    private int _lives = 3;
-    public int lives
-    {
-        get { return _lives; }
-        set
-        {
-            //if(_lives > value)
-            //lost a life need to respawn
-
-            _lives = value;
-            if(_lives > maxLives)
-            {
-                _lives = maxLives;
-            }
-
-            //if(_lives < 0)
-            //gameover
-            Debug.Log("Lives have been set to: " + lives.ToString());
-        }
-    }
 
     private int _score;
     public int score
@@ -61,6 +44,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
+        asm = GetComponent<AudioSourceManager>();
 
         if(speed <= 0)
         {
@@ -110,6 +94,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = Vector2.zero;
             rb.AddForce(Vector2.up * jumpForce);
+            asm.PlayOneShot(jumpSound, false);
         }
 
         if(!isGrounded && Input.GetButtonDown("Jump"))
@@ -194,10 +179,7 @@ public class PlayerController : MonoBehaviour
             EnemyWalker enemy = collision.gameObject.transform.parent.GetComponent<EnemyWalker>();
             enemy.Squish();
             rb.AddForce(Vector2.up * 500);
+            asm.PlayOneShot(squishSound, false);
         }
-    }
-    public virtual void TakeDamage(int damage)
-    {
-        lives -= damage;
     }
 }

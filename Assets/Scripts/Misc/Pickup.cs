@@ -13,6 +13,7 @@ public class Pickup : MonoBehaviour
     }
 
     public PickupType currentPickup;
+    public AudioClip pickupSound;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
@@ -31,6 +32,10 @@ public class Pickup : MonoBehaviour
                 case PickupType.Big:
                     collision.gameObject.GetComponent<PlayerController>().StartBigChange();
                     break;
+            }
+            if (pickupSound)
+            {
+                collision.gameObject.GetComponent<AudioSourceManager>().PlayOneShot(pickupSound, false);
             }
             Destroy(gameObject);
         }

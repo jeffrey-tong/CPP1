@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: e73ea043217ea0d49aae8155242f6184
+guid: 47a059ba4cc17e3408d86fedc8a788c7
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - deathSound: {fileID: 8300000, guid: 477973123bd32b74c8f41e86a64da5e7, type: 3}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

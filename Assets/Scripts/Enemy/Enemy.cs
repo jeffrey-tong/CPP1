@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Build.Player;
 using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer), typeof(Animator))]
@@ -10,6 +11,8 @@ public class Enemy : MonoBehaviour
 
     protected int _health;
     public int maxHealth;
+
+    public AudioClip deathSound;
 
     public int health
     {
@@ -23,6 +26,7 @@ public class Enemy : MonoBehaviour
             }
             if(_health <= 0)
             {
+                GameManager.instance.playerInstance.GetComponent<AudioSourceManager>().PlayOneShot(deathSound, false);
                 Death();
             }
         }

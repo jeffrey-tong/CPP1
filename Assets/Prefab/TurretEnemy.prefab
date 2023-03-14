@@ -186,6 +186,7 @@ MonoBehaviour:
   spawnPointRight: {fileID: 6759333672118126752}
   spawnPointLeft: {fileID: 6759333673402430166}
   projectilePrefab: {fileID: 4390610637514004285, guid: bafd1a32cbd57b348a076058ecf60890, type: 3}
+  fireSound: {fileID: 0}
 --- !u!114 &6759333673066153925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,8 +200,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 0
+  deathSound: {fileID: 8300000, guid: 477973123bd32b74c8f41e86a64da5e7, type: 3}
   projectileFireRate: 5
-  playerObject: {fileID: 0}
+  turretRange: 0
 --- !u!1 &6759333673402430167
 GameObject:
   m_ObjectHideFlags: 0

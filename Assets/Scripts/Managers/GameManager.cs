@@ -8,6 +8,8 @@ using UnityEngine.Events;
 public class GameManager : MonoBehaviour
 {
     public UnityEvent<int> OnLifeValueChanged;
+    AudioSourceManager asm;
+    public AudioClip loseLifeSound;
     private static GameManager _instance = null;
     public static GameManager instance
     {
@@ -24,6 +26,7 @@ public class GameManager : MonoBehaviour
             if(_lives > value)
             {
                 Respawn();
+                
             }
            
             _lives = value;
@@ -63,6 +66,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         lives = maxLives;
+        asm = GetComponent<AudioSourceManager>();
     }
     
     public void SpawnPlayer(Transform spawnPoint)
@@ -76,6 +80,7 @@ public class GameManager : MonoBehaviour
         if (playerInstance)
         {
             playerInstance.transform.position = currentSpawnPoint.position;
+            playerInstance.GetComponent<AudioSourceManager>().PlayOneShot(loseLifeSound, false);
         }
     }
 
